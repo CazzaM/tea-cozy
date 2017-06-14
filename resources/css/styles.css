@@ -4,6 +4,10 @@
 
 }
 
+.container{
+  overflow: scroll;
+}
+
 html{
   font-family: Helvetica;
   font-size: 22px;
@@ -16,9 +20,11 @@ html{
 }
 
 .headcontainer{
-  width: 100%;    
+  width: 1600px;
   position: fixed;
   border-bottom: 1px solid seashell;
+  background-color: black;
+  z-index: 10;
 }
 
 .header{
@@ -38,9 +44,40 @@ html{
   width: 350px;
   display:inline-flex;
   justify-content: space-between;
-  text-decoration: underline;
+}
+
+.headerright a{
+  color: seashell;
 }
 
 .headerright li{
   list-style: none;
+}
+
+.content{
+  position: relative;
+  top:70px;
+}
+
+#Mission{
+  width: 1600px;
+}
+
+.MissionImage {
+  width: 1200px;
+  height: 700px;
+  background-image: url("///Users/carolmartin/Desktop/projects/tea-cozy/resources/images/img-mission-background.jpg");
+  display: inline-flex;
+  align-items:center;
+}
+
+.Missionbanner{
+  padding: 10px;
+  background-color: black;
+  width:1200px;
+  height: auto;
+}
+
+.Missionbanner h2{
+  padding-bottom: 20px;
 }
