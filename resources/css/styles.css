@@ -56,7 +56,16 @@ html{
 
 .content{
   position: relative;
-  top:70px;
+  margin-top: 70px;
+}
+
+h2{
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+h4{
+  padding: 5px 5px;
 }
 
 #Mission{
@@ -66,18 +75,63 @@ html{
 .MissionImage {
   width: 1200px;
   height: 700px;
-  background-image: url("///Users/carolmartin/Desktop/projects/tea-cozy/resources/images/img-mission-background.jpg");
+  background-image: url("../images/img-mission-background.jpg");
   display: inline-flex;
   align-items:center;
 }
 
 .Missionbanner{
-  padding: 10px;
   background-color: black;
   width:1200px;
   height: auto;
 }
 
-.Missionbanner h2{
-  padding-bottom: 20px;
+#FeaturedTea{
+  margin: 0 auto;
+  padding-top: 70px;
+  width: 1000px;
+}
+
+.FeaturedTeaSection{
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.column{
+  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.row{
+  margin: 0;
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row h4{
+  width: 300px;
+}
+
+.image-sizes{
+  width: 300px;
+  height: 200px;
+  padding: 5px 5px;
+}
+
+#Location{
+  width: 1600px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+.LocationSection{
+  width: 1200px;
+  height: 500px;
+  background-image: url("../images/img-locations-background.jpg");
+  display: inline-flex;
+  flex-direction: column;
+  align-items:center;
 }
