@@ -1,153 +1,238 @@
+/* resets the browsers margin and padding */
 * {
   margin: 0;
   padding: 0;
-
 }
 
+/* Creates default settings for font, background colour, opacity, text
+alignment and width of page */
 html{
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
   background-color: black;
+  /* Gives the wording a slight transparency making them not as bright
+  as normal. */
   opacity: 0.9;
   text-align: center;
   width: 1600px;
+  /* Allows the background image for the lcoations section to appear just
+  underneath the heading when location nav items is chosen. Otherwise a portion
+  of the Featured tea section shows.*/
+  height: 2854px;
 }
 
+/* Creates a scroll bar */
 .container{
   overflow: scroll;
 }
 
+/* Creates a scroll bar */
 .headcontainer{
+  /* Sets the wdith so that the image is centred across the webpage with a gap
+  on either side */
   width: 1600px;
+  /* Fixes the header in place so that it doesn't scroll up as the user
+  moves further down the page */
   position: fixed;
   border-bottom: 1px solid seashell;
+  /* Set the background colour so that it seems like the main content
+  disappears behind the header when scrolling. */
   background-color: black;
+  /* Gives the header a higher priority than the content so that it
+  appears on top of the content */
   z-index: 10;
 }
 
 .header{
   height: 69px;
+  /* Next two lines put space between the logo and the nav items */
   display: flex;
   justify-content:space-between;
+  /* Adds a 10px gap on both sides of the headers so that they aren't
+  right against the pages ends */
   margin-left:10px;
   margin-right: 10px;
+  /* Places the logo and nav items in the middle of the header */
   align-items: center;
 }
 
 .headerleft{
+  /* Places the logo perfectly in the middle of the header. When ommitted,
+  the logo appears slightly towards the top of the header */
   display:inline-flex;
 }
 
 .headerright ul{
+  /* Sets the width so that the flex portion knows how much
+  space to allocate between the items */
   width: 350px;
+  /* Next two lines put space between each of the nav items */
   display:inline-flex;
   justify-content: space-between;
 }
 
 .headerright a{
+  /* Changes the default blue colour of the nav items to the seashell
+  colour per spec */
   color: seashell;
 }
 
 .headerright li{
+  /* Removes the bullets from the list items */
   list-style: none;
 }
 
+/*
 .content{
   position: relative;
-  margin-top: 70px;
 }
+*/
 
 h2{
+  /* Displays a 10px gap at the top of all h2 headings and a 15px gap at the
+  bottom */
   padding-top: 10px;
   padding-bottom: 15px;
 }
 
 h4{
+  /* Displays a 5px gap at the top and bottom as well as left and right of all
+  h4 headings */
   padding: 5px 5px;
 }
 
 #Mission{
-  width: 1600px;
+  /*width: 1600px; */
+  /* Using padding top (instead of margin-top) allows the entire image to be
+  displayed when cicking on nav items. Otherwise part of the image is cut off
+  at the top. However, the bottom of the image cuts off with padding top and
+  the opposite happens with margin-top */
+  padding-top: 70px;
 }
 
 .MissionImage {
+  /* Sets the width and height so that the banner can be displayed in the middle
+  of the background image and that the background image together with the banner
+  can be centered in the middle of the webpage (across) */
   width: 1200px;
   height: 700px;
+  /* Sets the background image */
   background-image: url("../images/img-mission-background.jpg");
+  /* The next two lines displays the banner on top of the background image and
+  places it in the middle (top to bottom) of the background image */
   display: inline-flex;
   align-items:center;
 }
 
 .Missionbanner{
+  /* Sets the Mission sections background colour to black */
   background-color: black;
+  /* Sets the width of the banner to be the same size as the background image */
   width:1200px;
-  height: auto;
 }
 
 #FeaturedTea{
-  margin: 0 auto;
+  /* Displays the Featured tea section 70px from the top of the webpage so that
+  it appears directly underneath the heading. */
   padding-top: 70px;
+  /* Sets the width of the Featured Tea section to allow it to be centered
+  across the webpage */
   width: 1000px;
+  /* The next two lines centre all elements in the Featured tea section across
+  the webpage */
+  display: inline-flex;
+  align-items: center;
 }
 
+/*
 .column{
-  margin: 0;
   display: inline-flex;
   flex-direction: column;
+  align-items: center;
 }
+*/
 
 .row{
-  margin: 0;
-  width: 1000px;
-  display: flex;
+  /* margin: 0; */
+  /* The next two lines display the thumbnails horizontally as well as wrap them */
+  display: inline-flex;
   flex-wrap: wrap;
+  /* Centres the thumbnails relative to the webpage */
   justify-content: center;
 }
 
-.row h4{
-  width: 300px;
-}
-
 .image-sizes{
+  /* Sets the width and height of each thumbnail and sets a gap of 5 pixels all
+  around each image thereby causing a 10pixel gap between each image */
   width: 300px;
   height: 200px;
   padding: 5px 5px;
 }
 
 #Location{
+  /* margin: 0 auto; */
+  /* Sets the wdith so that the image is centred across the webpage with a gap
+  on either side */
   width: 1600px;
-  margin: 0 auto;
+  /* Displays the Featured tea section 70px from the top of the webpage so that
+  it appears directly underneath the heading. */
   padding-top: 70px;
 }
 
 .LocationSection{
+  /* Sets the width and height so that the 3 square banners can be displayed in
+  the middle of the background image and that the background image together with
+  the 3 square banners and heading can be centered in the middle of the webpage
+  (across) */
   width: 1200px;
   height: 500px;
+  /* Sets the background image */
   background-image: url("../images/img-locations-background.jpg");
+  height: 500px;
+  /* Displays the background image in the middle (horizontally) of the webpage */
   display: inline-flex;
+  /* Displays each element underneath each other */
   flex-direction: column;
+  /* Displays each element vertically (top to bottom) within the background image */
   justify-content:center;
 }
 
 .boxes{
+  /* Sets the height and width of each of the 3 square banners */
   width: 300px;
   height: 300px;
+  /* Displays the 3 square banners on top of the background image */
   display: inline-flex;
+  /* Displays each of the elements within each of the square banners underneath
+  each other */
   flex-direction: column;
+  /* Places gaps above and below each element within each of the square banners.
+  The gap above the first item and below the last item will be half the size of
+  others */
   justify-content: space-around;
+  /* Sets the background colour to black for each of the 3 square banners */
   background-color: black;
-  margin: 0px 10px 0px 10px;
+  /* Creates a gap of 20pixels on the left and right of each of the 3 square
+  banners thereby creating a 40pixel gap between each square*/
+  margin: 0px 20px 0px 20px;
+  /* Makes all the writing completely opaque for each of the 3 square banners
+  thereby making them brighter than the rest of the text in the document */
   opacity: 1;
 }
 
 .footcontainer{
+  /* Sets the height of the footer so that the elements can be spaced vertically
+  using a flex container */
   height: 200px;
   display: inline-flex;
   justify-content: space-around;
+  /* Displays each of the elements within the footcontainer parent element
+  underneath each other */
   flex-direction: column;
 }
 
+/* Aligns the copyright information to the left with a 20 pixel gap on the left */
 .copyright{
   margin-left: 20px;
   text-align: left;
