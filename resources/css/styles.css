@@ -4,10 +4,6 @@
 
 }
 
-.container{
-  overflow: scroll;
-}
-
 html{
   font-family: Helvetica;
   font-size: 22px;
@@ -16,6 +12,10 @@ html{
   opacity: 0.9;
   text-align: center;
   width: 1600px;
+}
+
+.container{
+  overflow: scroll;
 }
 
 .headcontainer{
@@ -89,11 +89,6 @@ h4{
   margin: 0 auto;
   padding-top: 70px;
   width: 1000px;
-}
-
-.FeaturedTeaSection{
-  margin: 0 auto;
-  padding-top: 10px;
 }
 
 .column{
